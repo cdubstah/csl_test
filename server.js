@@ -58,9 +58,8 @@ function compareData() {
   newData = data;
 
 });
-	if ( prevData[prevData.length-1] == newData[newData.length-1])   {
-		console.log(prevData[prevData.length-1]);
-		console.log(newData[newData.length-1]);
+	if ( prevData[0] == newData[0])   {
+		console.log(prevData[0]);
 		return;
 	}
 	else {
