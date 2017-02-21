@@ -1,0 +1,27 @@
+{
+  "name": "csl",
+  "version": "1.0.0",
+  "description": "this is dope",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[B"
+  },
+  "keywords": [
+    "csl",
+    "heroku"
+  ],
+  "author": "conover-wang",
+  "license": "MIT",
+  "dependencies": {
+    "fcm-node": "^1.0.16",
+    "rss-parser": "^2.5.2"
+  },
+  "engines": {
+    "node": "v6.9.5"
+  }
+}
