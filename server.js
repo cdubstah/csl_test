@@ -74,7 +74,7 @@ function compareData() {
 }
 
 function compare(){
-    setTimeout(compare, 10000);
+    setTimeout(compare, 60000);
     compareData();
     
     // newData.push('Tue, 07 Feb 2017 09:47:51 -0800|MMR Dynamics in CSL')
@@ -82,7 +82,7 @@ function compare(){
 
 
 const requestHandler = (request, response) =>  { 
-	console.log(request.url);
+	response.end("HI THIS IS A HEROKU SERVER");
 } 
 
 const server = http.createServer(requestHandler)
