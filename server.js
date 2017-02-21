@@ -1,6 +1,6 @@
 const parser = require('rss-parser');
 const http = require('http');
-const port = 3000
+const port = 5000
 let prevData = [];
 let newData = [];
 const RSS_FEED = 'https://cstarleague.com/feed.rss';
@@ -87,7 +87,7 @@ const requestHandler = (request, response) =>  {
 
 const server = http.createServer(requestHandler)
 
-server.listen(port, (err) => {  
+server.listen(process.env.PORT || 5000 , (err) => {  
   	if (err) {
     return console.log('something bad happened', err);
   	}
