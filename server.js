@@ -73,7 +73,7 @@ function compareData() {
 }
 
 function compare(){
-    setTimeout(compare, 60000);
+    setTimeout(compare, 900000);
     compareData();
     
     // newData.push('Tue, 07 Feb 2017 09:47:51 -0800|MMR Dynamics in CSL')
@@ -93,5 +93,9 @@ server.listen(process.env.PORT || 5000 , (err) => {
 
   	console.log(`server is listening on ${port}`);
 })
+
+setInterval(function() {
+    http.get("http://<your app name>.herokuapp.com");
+}, 300000);
 
 compare();
