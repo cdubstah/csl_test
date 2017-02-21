@@ -95,7 +95,7 @@ server.listen(process.env.PORT || 5000 , (err) => {
 })
 
 setInterval(function() {
-    http.get("http://<your app name>.herokuapp.com");
+    http.get("http://cdubwang.herokuapp.com");
 }, 300000);
 
 compare();
